@@ -1,0 +1,14 @@
+<div class="core-hr-services">
+  <div class="core-hr-services-title">Services we offer</div>
+  <div class="core-hr-services-list">
+    <div class="core-hr-services-offered" *ngFor="let services of servicesList">
+      <div class="core-hr-services-offered-image">
+          <img class="core-hr-services-offered-image--fit" src="{{services.imageUrl}}" alt="{{services.name}}">
+      </div>
+      <div class="core-hr-services-method">
+          <div class="core-hr-services-method-title">{{services.title}}</div>
+          <div class="core-hr-services-method-description">{{services.description}}</div>
+      </div>
+    </div>
+  </div>
+</div>

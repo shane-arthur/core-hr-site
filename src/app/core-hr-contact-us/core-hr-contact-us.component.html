@@ -1,0 +1,106 @@
+<div class="core-hr">
+  <app-core-hr-header></app-core-hr-header>
+  <div class="core-hr-home">
+    <div class="core-hr-home-title">Delivering success through experience</div>
+  </div>
+  <div class="core-hr-gradient"></div>
+  <div class="core-hr-contact-us">
+    <div class="core-hr-contact-us-title">Contact us about your hiring needs</div>
+    <div class="core-hr-contact-us-title--highlight"></div>
+    <div class="core-hr-contact-us-description">This gives us the opportunity to give you a personalized service from
+      the start. Give us a brief description of the role you need to fill, and give us a call.</div>
+    <!-- Form container -->
+    <div class="core-hr-contact-form">
+      <div class="core-hr-contact-form__container">
+        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+          <div class="core-hr-contact-form__container-division">
+            <div class="core-hr-contact-form__container-group">
+              <div class="form-group">
+                <span class="input-group input-group-name">
+                  <input type="text" placeHolder="First Name" formControlName="firstName" class="form-control core-hr-form-field"
+                    [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" />
+                </span>
+                <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+                  <div *ngIf="f.firstName.errors.required">First Name is required</div>
+                </div>
+              </div>
+              <div class="form-group">
+                <span class="input-group input-group-name">
+                  <input type="text" placeHolder="Last Name" formControlName="lastName" class="form-control core-hr-form-field"
+                    [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }" />
+                </span>
+                <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
+                  <div *ngIf="f.lastName.errors.required">Last Name is required</div>
+                </div>
+              </div>
+              <div class="form-group">
+                <span class="input-group input-group-title">
+                  <input type="text" placeHolder="Job Title" formControlName="jobTitle" class="form-control core-hr-form-field"
+                    [ngClass]="{ 'is-invalid': submitted && f.jobTitle.errors }" />
+                </span>
+                <div *ngIf="submitted && f.jobTitle.errors" class="invalid-feedback">
+                  <div *ngIf="f.jobTitle.errors.required">Job Title is required</div>
+                </div>
+              </div>
+            </div>
+            <div class="core-hr-contact-form__container-group">
+              <div class="form-group">
+                <span class="input-group input-group-company">
+                  <input type="text" placeHolder="Company" formControlName="company" class="form-control core-hr-form-field"
+                    [ngClass]="{ 'is-invalid': submitted && f.company.errors }" />
+                </span>
+                <div *ngIf="submitted && f.company.errors" class="invalid-feedback">
+                  <div *ngIf="f.company.errors.required">Company is required</div>
+                </div>
+              </div>
+              <div class="form-group">
+                <span class="input-group input-group-email">
+                  <input type="text" placeHolder="Work Email" formControlName="email" class="form-control core-hr-form-field"
+                    [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                </span>
+                <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                  <div *ngIf="f.email.errors.required">Email is required</div>
+                  <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+                </div>
+              </div>
+              <div class="form-group">
+                <span class="input-group input-group-phone">
+                  <input type="text" placeHolder="Business phone" formControlName="phone" class="form-control core-hr-form-field"
+                    [ngClass]="{ 'is-invalid': submitted && f.phone.errors }" />
+                </span>
+                <div *ngIf="submitted && f.phone.errors" class="invalid-feedback">
+                  <div *ngIf="f.phone.errors.phone">Position be a valid email address</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="core-hr-contact-form__container-division">
+            <div class="form-group core-hr-contact-form__container-group">
+              <input type="text" placeHolder="Position applied for" formControlName="positionFor" class="form-control core-hr-form-field"
+                [ngClass]="{ 'is-invalid': submitted && f.positionFor.errors }" />
+              <div *ngIf="submitted && f.positionFor.errors" class="invalid-feedback">
+                <div *ngIf="f.positionFor.errors.positionFor">Position be a valid email address</div>
+              </div>
+            </div>
+            <div class="form-group core-hr-contact-form__container-group">
+              <input type="text" placeHolder="Position Type" formControlName="positionType" class="form-control core-hr-form-field"
+                [ngClass]="{ 'is-invalid': submitted && f.positionType.errors }" />
+              <div *ngIf="submitted && f.positionType.errors" class="invalid-feedback">
+                <div *ngIf="f.positionType.errors.positionType">Position Type must be a valid string</div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" placeHolder="Notes" formControlName="notes" class="form-control core-hr-form-field core-hr-form-field--full"
+              [ngClass]="{ 'is-invalid': submitted && f.notes.errors }" />
+            <div *ngIf="submitted && f.notes.errors" class="invalid-feedback">
+              <div *ngIf="f.notes.errors.required">Notes is required</div>
+            </div>
+          </div>
+          <div><button class="core-hr-contact-us-button">Submit</button>
+            <button (click)="goBack()" class="core-hr-contact-us-button">Go Back</button></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

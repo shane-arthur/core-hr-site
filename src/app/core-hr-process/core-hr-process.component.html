@@ -1,0 +1,16 @@
+<div class="core-hr-processes">
+    <div class="core-hr-processes-title">How we work</div>
+    <div class="core-hr-processes-list">
+      <div class="core-hr-processes-offered" *ngFor="let processes of processesList;let i=index;">
+        <div class="core-hr-processes-offered-image">{{i+1}}</div>
+        <div class="core-hr-processes-method">
+            <div class="core-hr-processes-method-title">{{processes.title}}</div>
+            <div class="core-hr-processes-method-title--highlight"></div>
+            <div class="core-hr-processes-method-description">{{processes.description}}</div>
+        </div>
+      </div>
+      <div class="core-hr-processes-method-info">
+        <button [routerLink] = "'/contact-us'" class="core-hr-processes-method-info-button">Get in touch</button>
+      </div>
+    </div>
+  </div>
