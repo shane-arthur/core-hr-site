@@ -186,7 +186,7 @@ html {
         height: 30rem;
         &-image--fit {
             width: 25rem;
-            height: 25rem;
+            height: 17.5rem;
             border-radius: 2.5rem;
             margin-bottom: 4rem;
         }
@@ -465,3 +465,20 @@ html {
 .header-text-container{
     font-size: 2rem;
 }
+
+.warning-container{
+    display: none;
+}
+
+@media only screen and (max-width: 1050px) {
+    .overall-app-container{
+        opacity: 0.025;
+    }
+
+    .warning-container{
+        display: flex !important;
+        justify-content:center;
+        opacity: 1 !important;
+
+    }
+  }
