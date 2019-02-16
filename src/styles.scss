@@ -35,7 +35,9 @@ html {
 }
 
 .core-hr {
+    padding: 2rem;
     width: 100%;
+    border: 0.5px solid lightgray;
     max-width: 78.75rem;
     margin: 0 auto;
     &-gradient {
@@ -67,7 +69,7 @@ html {
                 }
                 padding: 5rem 14rem 2rem 14rem;
                 text-align: center;
-                font-size: 1.5rem;
+                font-size: 1rem;
                 color: #333333;
                 letter-spacing: 0;
                 line-height: 50px;
@@ -183,7 +185,7 @@ html {
     &-approach {
         display: flex;
         flex-direction: row;
-        height: 30rem;
+        height: 25rem;
         &-image--fit {
             width: 25rem;
             height: 17.5rem;
