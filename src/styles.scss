@@ -62,9 +62,12 @@ html {
             justify-content: center;
             align-items: center;
             &-text {
+                &-small{
+                    font-size: 2rem!important
+                }
                 padding: 5rem 14rem 2rem 14rem;
                 text-align: center;
-                font-size: 30px;
+                font-size: 1.5rem;
                 color: #333333;
                 letter-spacing: 0;
                 line-height: 50px;
@@ -457,4 +460,8 @@ html {
     flex-direction: column;
     justify-content: center;
     height: 100%;
+}
+
+.header-text-container{
+    font-size: 2rem;
 }
