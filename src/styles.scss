@@ -173,11 +173,13 @@ html {
     }
     &-methodology {
         padding-top: 2rem;
+        padding-bottom:2rem;
         &-title {
             width: 100%;
             text-align: center;
             color: red;
             font-size: 2rem;
+            margin-top: 2rem;
             margin-bottom: 4rem;
             font-family: OpenSans-Bold;
         }
@@ -185,8 +187,8 @@ html {
     &-approach {
         display: flex;
         flex-direction: row;
-        height: 25rem;
-        margin-bottom: 5rem;
+        height: 17.5rem;
+        margin-bottom: 2.5rem;
         &-image--fit {
             width: 25rem;
             height: 17.5rem;
@@ -194,7 +196,7 @@ html {
             margin-bottom: 4rem;
         }
         &-method {
-            margin: 8rem;
+            margin: 4rem;
             &-title {
                 font-family: OpenSans-Regular;
                 font-size: 28px;
