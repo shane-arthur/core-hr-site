@@ -35,21 +35,24 @@ html {
 }
 
 .core-hr {
-    padding: 2rem;
     width: 100%;
-    border: 0.5px solid lightgray;
-    max-width: 78.75rem;
     margin: 0 auto;
     &-gradient {
         background-image: linear-gradient(90deg, #FB930A 0%, #FF3F02 100%);
         height: 10px;
     }
     &-home {
-        background-image: url('/assets/images/patrick-hendry-765433-unsplash.jpg');
+        background-image: url('/assets/images/patrick-hendry-765433-unsplash_sized.jpg');
         width:100%;
         height: 25rem;
         background-size: 100% 100%;
         background-repeat: no-repeat;
+        .core-hr-header {
+            border: none;
+        }
+        .core-hr-header__container-info-text {
+            color: #FAA80D;
+        }
         &-title {
             font-size: 50px;
             color: #FFFFFF;
@@ -65,14 +68,14 @@ html {
             align-items: center;
             &-text {
                 &-small{
-                    font-size: 2rem!important
+                    font-size: 1rem !important;
                 }
-                padding: 5rem 14rem 2rem 14rem;
+                padding: 5rem 15rem 2rem 15rem;
                 text-align: center;
-                font-size: 1rem;
+                font-size: 30px;
                 color: #333333;
                 letter-spacing: 0;
-                line-height: 50px;
+                line-height: 60px;
                 background-color: #F5F5F5;
                 &--highlight {
                     color: orange;
@@ -86,8 +89,7 @@ html {
     }
     &-header {
         width: 100%;
-        background-color: #333333;
-        max-width: 78.75rem;
+        border-bottom: 1px solid #1A1A1A;
         &__container {
             flex-direction: row;
             display: flex;
@@ -108,7 +110,7 @@ html {
                 &-text {
                     color: #ffffff;
                     padding: 0.5rem 1.5rem;
-                    margin: 0 2rem 0 5rem;
+                    margin: 0 3rem 0 5rem;
                     font-size: 1rem;
                 }
                 &-button {
@@ -127,7 +129,6 @@ html {
         height: auto;
         background: #333333;
         padding: 1rem 0;
-        max-width: 78.75rem;
         margin: 0 auto;
     }
     &-address {
@@ -192,7 +193,6 @@ html {
         &-image--fit {
             width: 25rem;
             height: 17.5rem;
-            border-radius: 2.5rem;
             margin-bottom: 4rem;
         }
         &-method {
@@ -204,7 +204,7 @@ html {
                 letter-spacing: 0;
                 line-height: 37px;
                 &--highlight {
-                    border: 5px solid #FAA80D;
+                    border: 4px solid #FAA80D;
                     margin-top: 1rem;
                     width: 5rem;
                 }
@@ -229,7 +229,7 @@ html {
                     color: #FFFFFF;
                     letter-spacing: 0;
                     text-align: center;
-                    line-height: 1rem;
+                    line-height: 1.25rem;
                 }
             }
         }
@@ -273,9 +273,9 @@ html {
                 letter-spacing: 0;
                 line-height: 37px;
                 &--highlight {
-                    border: 4px solid #FD6A05;
+                    border: 3px solid #FD6A05;
                     margin-top: 0.5rem;
-                    width: 2rem;
+                    width: 4rem;
                 }
             }
             &-description {
@@ -349,6 +349,17 @@ html {
     &-contact-us {
         margin: 4rem 8rem;
         width: 46rem;
+        &-home {
+            background-image: url('/assets/images/nazar-fedunkiv-243696-unsplash_sized.jpg');
+            width:100%;
+            height: 25rem;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            .core-hr-header__container-info-button {
+                color: #FAA80D;
+                border: 1px solid #FAA80D;
+            }
+        }
         &-title {
             font-family: OpenSans-Regular;
             font-size: 28px;
@@ -357,7 +368,7 @@ html {
             line-height: 37px;
             &--highlight {
                 border: 4px solid #FF4000;
-                margin: 1rem 0;
+                margin: 0.5rem 0;
                 width: 5rem;
             }
         }
@@ -379,7 +390,7 @@ html {
             letter-spacing: 0;
             text-align: center;
             line-height: 15px;
-            margin-top: 2rem;
+            margin-top: 3rem;
         }
     }
     &-form-field {
@@ -421,35 +432,35 @@ html {
     content: '*';
     position: absolute;
     top: 1px;
-    left: 75px;
+    left: 80px;
     color: #f00;
 }
 .input-group-company::after{
     content: '*';
     position: absolute;
     top: 1px;
-    left: 68px;
+    left: 70px;
     color: #f00;
 }
 .input-group-phone::after{
     content: '*';
     position: absolute;
     top: 1px;
-    left: 100px;
+    left: 105px;
     color: #f00;
 }
 .input-group-email::after{
     content: '*';
     position: absolute;
     top: 1px;
-    left: 78px;
+    left: 80px;
     color: #f00;
 }
 .input-group-title::after{
     content: '*';
     position: absolute;
     top: 1px;
-    left: 65px;
+    left: 70px;
     color: #f00;
 }
 
@@ -468,14 +479,15 @@ html {
 }
 
 .header-text-container{
-    font-size: 2rem;
+    font-size: 3rem;
+    padding-top: 100px;
 }
 
 .warning-container{
     display: none;
 }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1023px) {
     .overall-app-container{
         opacity: 0.025;
     }
