@@ -52,6 +52,7 @@ html {
         }
         .core-hr-header__container-info-text {
             color: #FAA80D;
+            cursor: pointer;
         }
         &-title {
             font-size: 50px;
@@ -99,10 +100,11 @@ html {
                 width: 70%;
                 display: flex;
                 &-icon {
-                margin: 1rem;
-                width: 5rem;
-                height: 1.5rem;
+                    margin: 1rem;
+                    width: 5rem;
+                    height: 1.5rem;
                 }
+                cursor: pointer;
             }
             &-info {
                 display: flex;
@@ -112,6 +114,7 @@ html {
                     padding: 0.5rem 1.5rem;
                     margin: 0 3rem 0 5rem;
                     font-size: 1rem;
+                    cursor: pointer;
                 }
                 &-button {
                     border: 1px solid #ffffff;
@@ -120,6 +123,7 @@ html {
                     padding: 0.5rem 1.5rem;
                     background: #333333;
                     color: #ffffff;
+                    cursor: pointer;
                 }
             }
         }
@@ -230,6 +234,7 @@ html {
                     letter-spacing: 0;
                     text-align: center;
                     line-height: 1.25rem;
+                    cursor: pointer;
                 }
             }
         }
@@ -299,6 +304,7 @@ html {
                     letter-spacing: 0;
                     text-align: center;
                     line-height: 1rem;
+                    cursor: pointer;
                 }
             }
         }
@@ -358,6 +364,7 @@ html {
             .core-hr-header__container-info-button {
                 color: #FAA80D;
                 border: 1px solid #FAA80D;
+                cursor: pointer;
             }
         }
         &-title {
@@ -391,6 +398,7 @@ html {
             text-align: center;
             line-height: 15px;
             margin-top: 3rem;
+            cursor: pointer;
         }
     }
     &-form-field {
